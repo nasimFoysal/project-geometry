@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+
+    <!-- styles link -->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+
+</head>
+
+<body class="container mt-3 mb-5 pb-5">
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded p-4">
+            <div class="container-fluid">
+                <div class="d-flex flex-column">
+                    <a class="navbar-brand fs-2" href="#">Interactive</a>
+                    <h4 class="fs-5 my-geometry">Geometry Genius</h4>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="my-blog-container ms-auto">
+                        <button id="btn-blog" class="btn btn-primary w-100" type="submit">Blog</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- header ends -->
+
+
+    <!-- main start -->
+    <main>
+        <div class="row d-flex flex-row">
+            <div class="col-12 col-md-9">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col text-center">
+                        <div class="card h-100 p-3" id="triangle-card">
+                            <div>
+                                <img src="./images/triangle.png" class="pt-3" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="my-card-title">Triangle</h5>
+                                <p class="my-card-text mb-1">Area (A) = 0.5 &#215; b &#215; h</p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="my-card-text mt-0 me-3">b=<span id="triangle-formula-b">4</span>cm,
+                                        h=<span id="triangle-formula-h">6</span>cm</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <input id="triangle-input-b"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 me-2"
+                                        type="text" name="" placeholder="b">
+                                    <label for="triangle-input-b my-label">cm</label>
+                                    
+                                    <input id="triangle-input-h"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 mx-2"
+                                        type="text" name="" placeholder="h">
+                                    <label for="triangle-input-h me-2">cm</label>
+
+                                </div>
+                                <button id="btn-calculate-triangle"
+                                    class="btn btn-primary w-100 mt-3 fw-semibold">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="card h-100 p-3" id="rectangle-card">
+
+                            <div>
+                                <img src="./images/rectangle.png" class="pt-3" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="my-card-title">Rectangle</h5>
+                                <p class="my-card-text mb-0">Area (A) = w &#215; I</p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="my-card-text mt-0 me-3">w=<span id="rectangle-formula-w">4</span>cm,
+                                        I=<span id="rectangle-formula-l">6</span>cm</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <input id="rectangle-input-w"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 me-2"
+                                        type="text" name="" placeholder="w">
+                                    <label for="rectangle-input-w">cm</label>
+                                    
+                                    <input id="rectangle-input-l"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 mx-2"
+                                        type="text" name="" placeholder="l">
+                                    <label for="rectangle-input-l">cm</label>
+                                  
+                                </div>
+                                <button id="btn-calculate-rectangle"
+                                    class="btn btn-primary w-100 mt-3 fw-semibold">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="card h-100 p-3" id="para-card">
+                            <div class="p-2">
+                                <img src="./images/parallelogram.png" class="img-fluid pt-3" alt="...">
+                            </div>
+
+
+                            <div class="card-body">
+                                <h5 class="my-card-title">Parallelogram</h5>
+                                <p class="my-card-text mb-0">Area (A) = b &#215; h</p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="my-card-text mt-0 me-3">b=<span id="para-formula-b">10</span>cm, h=<span
+                                            id="para-formula-h">12</span>cm</p>
+                                   
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <input id="para-input-b"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 me-2"
+                                        type="text" name="" placeholder="b">
+                                    <label for="para-input-b">cm</label>
+                                   
+                                    <input id="para-input-h"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 mx-2"
+                                        type="text" name="" placeholder="h">
+                                    <label for="para-input-h me-2">cm</label>
+                                   
+                                </div>
+                                <button id="btn-calculate-para"
+                                    class="btn btn-primary w-100 mt-3 fw-semibold">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="card h-100 p-3" id="rhombus-card">
+                            <div>
+                                <img src="./images/rhombus.png" class="pt-3" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="my-card-title">Rhombus</h5>
+                                <p class="my-card-text mb-0">Area (A) = 0.5 &#215; d1 &#215; d2</p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="my-card-text mt-0 me-3">d1=<span id="rhombus-formula-d1">16</span>cm,
+                                        d2=<span id="rhombus-formula-d2">8</span>cm</p>
+                                   
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <input id="rhombus-input-d1"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 me-2"
+                                        type="text" name="" placeholder="d1">
+                                    <label for="rhombus-input-d1">cm</label>
+                                   
+                                    <input id="rhombus-input-d2"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 mx-2"
+                                        type="text" name="" placeholder="d2">
+                                    <label for="rhombus-input-d2">cm</label>
+                             
+
+                                </div>
+                                <button id="btn-calculate-rhobmus"
+                                    class="btn btn-primary w-100 mt-3 fw-semibold">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="card h-100 p-3" id="pentagon-card">
+                            <div>
+                                <img src="./images/pentagon.png" class="pt-3" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="my-card-title">Pentagon</h5>
+                                <p class="my-card-text mb-0">Area (A) = 0.5 &#215; p &#215; b</p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="my-card-text mt-0 me-3">p=<span id="pentagon-formula-p">6</span>cm,
+                                        b=<span id="pentagon-formula-b">10</span>cm</p>
+                            
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <input id="pentagon-input-p"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 me-2"
+                                        type="text" name="" placeholder="p">
+                                    <label for="pentagon-input-p">cm</label>
+                           
+                                    <input id="pentagon-input-b"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 mx-2"
+                                        type="text" name="" placeholder="b">
+                                    <label for="pentagon-input-b">cm</label>
+                                 
+                                </div>
+                                <button id="btn-calculate-pentagon"
+                                    class="btn btn-primary w-100 mt-3 fw-semibold">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="card h-100 p-3" id="ellipse-card">
+                            <div>
+                                <img src="./images/ellipse.png" class="pt-3" alt="...">
+                            </div>
+
+
+                            <div class="card-body">
+                                <h5 class="my-card-title">Ellipse</h5>
+                                <p class="my-card-text mb-0">Area (A) = &#960;ab</p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="my-card-text mt-0 me-3">a=<span id="ellipse-formula-a">10</span>cm,
+                                        b=<span id="ellipse-formula-b">4</span>cm</p>
+                                  
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <input id="ellipse-input-a"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 me-2"
+                                        type="text" name="" placeholder="a">
+                                    <label for="ellipse-input-a">cm</label>
+                                   
+                                    <input id="ellipse-input-b"
+                                        class="w-50 my-input-field border border-0 bg-secondary rounded ps-2 mx-2"
+                                        type="text" name="" id="triangle-input-h" placeholder="b">
+                                    <label for="ellipse-input-b">cm</label>
+                                  
+
+                                </div>
+                                <button id="btn-calculate-ellipse"
+                                    class="btn btn-primary w-100 mt-3 fw-semibold">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-3 result-container border border-light-subtle text-center rounded">
+                <h4 class="text-decoration-underline mt-4">Area Calculation</h4> 
+                    <table id="area-table">
+
+                    </table>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- scripts -->
+    <script src="./js/utility.js"></script>
+    <script src="./js/scripts.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="./js/bootstrap.js"></script>
+
+</body>
+
+</html>

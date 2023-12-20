@@ -1,0 +1,73 @@
+.my-blog-container{
+    width: 6rem;
+}
+
+.my-geometry{
+    color: rgba(17, 17, 17, 0.6);
+}
+
+
+
+
+
+.my-input-field {
+    height: 32px;
+}
+
+.my-label{
+    font-size: 8px;
+}
+
+
+.my-card-title{
+    font-size: 1.5rem;
+}
+
+.my-card-text{
+    font-size: 1rem;
+}
+
+
+.my-fa-icon{
+    width: 1.2rem;
+    height: 1.2rem;
+    
+
+}
+
+
+.my-check-btn{
+    width: 1.2rem;
+    height: 1.2rem;
+
+}
+
+.my-btn-convert{
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    color: white;
+    background-color: #1090D8;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.my-btn-delete{
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    color: white;
+    background-color: #1090D8;
+    padding: 5px;
+    font-weight: 500;
+
+}
+
+
+
+
+
+/* results */
+.result-container{
+    height: 400px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Lato&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <!-- style link -->
+    <link rel="stylesheet" href="./styles/blog.css">
+</head>
+
+<body class="mt-5">
+    <header class="text-center">
+        <div class="shadow-sm p-3 mb-5 bg-body rounded p-3 mx-auto w-50">
+            <h1 class="text-primary">Questions And Answers</h1>
+        </div>
+    </header>
+    <main class="mt-4">
+        <div class="container">
+            <div class="shadow-sm p-3 mb-5 bg-body rounded p-5">
+                <h4 class="text-center">Question: 1</h4>
+                <h2 class="text-center">What is DOM and what is the purpose of DOM?</h2>
+                <h4 class="text-decoration-underline">Answer :</h4>
+                <p>DOM is the short form for Document Object Model. Whatever we write in HTML is static. We can not
+                    interact
+                    with HTML alone. To interact with a webpage, we need programming languages, like JavaScript. But
+                    JavaScript can't understand HTML. It understands objects and arrays etc. But since a webpage is
+                    mainly
+                    HTML, JavaScript convert the HTML into an object like model. And this object model has many methods
+                    and
+                    functions. By using these methods, JavaScript gets access to the HTMl elements. It can then modify,
+                    add,
+                    delete the elements as needed. This is the purpose of DOM.</p>
+
+            </div>
+            <div class="shadow-sm p-3 mb-5 bg-body rounded p-5">
+                <h4 class="text-center">Question: 2</h4>
+                <h2 class="text-center"> How will you select HTML elements using DOM? Name the DOM methods.</h2>
+                <h4 class="text-decoration-underline">Answer :</h4>
+                <p>
+                    By using DOM, we can select the HTML elements in 5 methods.
+                <ol>
+                    <li>getElementsByTagName()</li>
+                    <li>getElementsByClassName()</li>
+                    <li>getElementById()</li>
+                    <li>querySelector()</li>
+                    <li>querySelectorAll()</li>
+
+                </ol>
+                getElementsByTagName() method select all the elements of a given tag. It returns an HTML collection. We
+                can
+                then modify the HTML by looping through this array like HTML collection. For example,
+                element.getElementsByTagName("tag")
+                getElementsByClassName() method works the same way as getElementsByTagName(). The difference is it takes
+                the
+                name of the class as a parameter. For example, element.getElementsByClassName("class-name")
+
+                getElementById() method takes the id of an element.It doesn't return an HTML collection because id is
+                unique
+                in HTML. For example, element.getElementById("id")
+
+                Since querySelector() and querySelectorAll() methods are CSS selectors, while giving parameters, css
+                class
+                selector "." and id selector "#" should be given accodringly.
+
+                </p>
+
+
+
+            </div>
+            <div class="shadow-sm p-3 mb-5 bg-body rounded p-5">
+                <h4 class="text-center">Question: 3</h4>
+                <h2 class="text-center"> What is event bubble?</h2>
+                <h4 class="text-decoration-underline">Answer :</h4>
+                <p>
+                    Event bubbling is a method of event propagation in the HTML DOM. Let's say there is an event an
+                    element
+                    inside another element, and both elements have registered a handle to that event. It is a process
+                    that
+                    starts with the element that triggered the event and then bubbles up to the containing elements in
+                    the
+                    hierarchy. In event bubbling, the event is first captured and handled by the innermost element and
+                    then
+                    propagated to outer elements.
+                </p>
+            </div>
+
+            <div class="shadow-sm p-3 mb-5 bg-body rounded p-5">
+
+                <h4 class="text-center">Question: 3</h4>
+                <h2 class="text-center">What is a callback function and why will you use it?</h2>
+                <h4 class="text-decoration-underline">Answer :</h4>
+                <p>The function that is passed as an argument inside another function is called a callback function.</p>
+                <p>We need callback functions because many JavaScript actions are asynchronous, which means they don't
+                    really stop the program (or a function) from running until they're completed, as you're probably
+                    used
+                    to. Instead, it will execute in the background while the rest of the code runs.</p>
+            </div>
+
+
+
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- script bootstrap -->
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
